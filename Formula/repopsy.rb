@@ -11,7 +11,7 @@ class Repopsy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/andpalmier/repopsy/releases/download/v1.0.0/repopsy_1.0.0_darwin_amd64.tar.gz"
-      sha256 "749892368c9d8285c805b1416b2c95d138740b74c96563447b1b32cfa98bdc7b"
+      sha256 "985b9efc03b63600f5c0d459c20fd2461e759b8b78166c3d15e416a6367e55cd"
 
       def install
         bin.install "repopsy"
@@ -19,7 +19,7 @@ class Repopsy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/andpalmier/repopsy/releases/download/v1.0.0/repopsy_1.0.0_darwin_arm64.tar.gz"
-      sha256 "5febee70e3c17f5a2912e30410b84ae56f1b1d4142c40afb3f0d8c3dfa80d9a1"
+      sha256 "aedfc4682257f268e039fe194696f993e2c3cbf150594093f24d6334525036a4"
 
       def install
         bin.install "repopsy"
@@ -30,14 +30,14 @@ class Repopsy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/andpalmier/repopsy/releases/download/v1.0.0/repopsy_1.0.0_linux_amd64.tar.gz"
-      sha256 "566a1bfcd14fd7b91f34c5c38bc808c14ee876c43efba4c1d81f11e1a0cf2771"
+      sha256 "6fb9d0900b363973e2b67cd9e9ee948a09cb9347912d6b25f31c6dd3c6bfe811"
       def install
         bin.install "repopsy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/andpalmier/repopsy/releases/download/v1.0.0/repopsy_1.0.0_linux_arm64.tar.gz"
-      sha256 "1678ee967e9cf50b72b819449deec3073532c54555fc50a02e58a0f76b9b297b"
+      sha256 "4528d05951f2ca51a7342d590082ebf9d38e9ab3fd03892300923edd385fe283"
       def install
         bin.install "repopsy"
       end
