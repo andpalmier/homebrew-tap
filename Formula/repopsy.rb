@@ -5,21 +5,21 @@
 class Repopsy < Formula
   desc "Forensic tool for analyzing git repository history"
   homepage "https://github.com/andpalmier/repopsy"
-  version "1.1.0"
+  version "1.1.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.0/repopsy_1.1.0_darwin_amd64.tar.gz"
-      sha256 "48620957211a242f9ba12a3126c38fd0dd06ee79ab566b2f7e06dca02660edc2"
+      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.1/repopsy_1.1.1_darwin_amd64.tar.gz"
+      sha256 "8b71b6d78b4b0e95930ad012fff429eef8daaa08eca9dec2bc1315be3b726e79"
 
       def install
         bin.install "repopsy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.0/repopsy_1.1.0_darwin_arm64.tar.gz"
-      sha256 "40f330c8f28f83e4f09585f49ad51944784fbd9a783b9526fe73d63bab6d1769"
+      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.1/repopsy_1.1.1_darwin_arm64.tar.gz"
+      sha256 "675a06c2d87e708fa8d61945b2114dbb8fe2caee2e2f8b110c2b2451e341a5af"
 
       def install
         bin.install "repopsy"
@@ -29,15 +29,15 @@ class Repopsy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.0/repopsy_1.1.0_linux_amd64.tar.gz"
-      sha256 "8f2d6b164df7ca108e3922b2c24691d2407d1dc1feac72996697f8399b019710"
+      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.1/repopsy_1.1.1_linux_amd64.tar.gz"
+      sha256 "aa94beb7872f954653f96c5023f3a57c9f8f4bce11ea604621e6d73d1e61134a"
       def install
         bin.install "repopsy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.0/repopsy_1.1.0_linux_arm64.tar.gz"
-      sha256 "f2b7b6d101785a2bd8914b3d1be13b9638c0ae46acf51dee835d37523f8006e0"
+      url "https://github.com/andpalmier/repopsy/releases/download/v1.1.1/repopsy_1.1.1_linux_arm64.tar.gz"
+      sha256 "798033101ebdb8d2533b5963be25020feb2b4e3f956d14459be8ac0a33c772b1"
       def install
         bin.install "repopsy"
       end
