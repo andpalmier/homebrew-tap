@@ -3,7 +3,7 @@ cask "mbzr" do
   name "mbzr"
   desc "CLI tool to search in MalwareBazaar database and submit samples"
   homepage "https://github.com/andpalmier/mbzr"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "mbzr" do
     on_intel do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "fe628d685e3c3e04684ee66dd36184fed13dbb5d8dfebe4c29d7e762666da003"
+      sha256 "f8c4acb23cf43e44032fe99fd9bee98afe418fad1b6a996f0c0271464bb96f51"
     end
     on_arm do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "907cf4a816526d248c8555c67523850d9bd579f353672e52c286d225beae896c"
+      sha256 "845cb062861e8c89634b2f2438c8d4f79b81ea33d5be4f7dbd48fa9e9bd40b21"
     end
   end
 
@@ -28,12 +28,12 @@ cask "mbzr" do
     on_intel do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "849f3038b527564e16e4e8141e9b02b89021b952fdadfa4f9dba74b7799940fc"
+      sha256 "284950800950bf643b6e417721a8c429b67971f9f067f302a3e2836dd12da2cf"
     end
     on_arm do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "7c5d1f2c47fb0c120926d4d1693c7e97369ec85e81175485fca4662ef6f5519c"
+      sha256 "4d703fdb043143fd7130d8cd469445c8f8c955501404df88f015fb65e231215f"
     end
   end
 
