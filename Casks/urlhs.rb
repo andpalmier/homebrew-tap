@@ -15,12 +15,12 @@ cask "urlhs" do
     on_intel do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "10832d917be9919b28da50360a772dacf360783d7e8a2df3a242b86273768ecd"
+      sha256 "afa82f7b0cdb78ca171a9c1a8727dd33909286d0a59fdbc8a2a45027d70b484a"
     end
     on_arm do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "3d3481f8d5943bd2cf0b4c47cf6a026751f0cbfc9e1e1f54ba557f211c0d251f"
+      sha256 "f06589078b745a4080a43d66ad468119e9b57dd593b1e92482121231a3377af9"
     end
   end
 
@@ -28,12 +28,12 @@ cask "urlhs" do
     on_intel do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "6ba0b0ebff9647e37a057deee4d338d22028329ab9ba1e3032d1dc0c2df8552a"
+      sha256 "b50426be390f462538aa9dd5f1abdd7c9d5764f2483bdfef49eed536657a1456"
     end
     on_arm do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "590db2b553bc67ccaf1f4a46c1f8edc3adbf0cc5abc5f0f80da647dbed696c08"
+      sha256 "c1640e0d6a07a13020a1c1d609d6aa5333eb7ce71044e5130c88bf06fbc3b19e"
     end
   end
 
