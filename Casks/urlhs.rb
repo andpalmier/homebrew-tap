@@ -3,7 +3,7 @@ cask "urlhs" do
   name "urlhs"
   desc "CLI tool to search in URLhaus database and submit URLs"
   homepage "https://github.com/andpalmier/urlhs"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "urlhs" do
     on_intel do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "88bfb9e66747b690c554ef21eb642f7270c15b6b2557a743cce574fc0c1958ea"
+      sha256 "10832d917be9919b28da50360a772dacf360783d7e8a2df3a242b86273768ecd"
     end
     on_arm do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "feeca9a8191fe0ce69134f2599f5acfd15fe85bb3790eedbafe3f1123fb3be5b"
+      sha256 "3d3481f8d5943bd2cf0b4c47cf6a026751f0cbfc9e1e1f54ba557f211c0d251f"
     end
   end
 
@@ -28,12 +28,12 @@ cask "urlhs" do
     on_intel do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "b3a32a1cc6c5bbfe45616df1aaa28a3512800188c4c4747481aacbc56dc7b35a"
+      sha256 "6ba0b0ebff9647e37a057deee4d338d22028329ab9ba1e3032d1dc0c2df8552a"
     end
     on_arm do
       url "https://github.com/andpalmier/urlhs/releases/download/v#{version}/urlhs_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/urlhs"
-      sha256 "9e8afaf935530ba99c1eafcfa4fdbcb34d16dd465a31a8b79e2c96e78e691585"
+      sha256 "590db2b553bc67ccaf1f4a46c1f8edc3adbf0cc5abc5f0f80da647dbed696c08"
     end
   end
 
