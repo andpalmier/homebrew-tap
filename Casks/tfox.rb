@@ -3,7 +3,7 @@ cask "tfox" do
   name "tfox"
   desc "CLI tool to search in ThreatFox IOC database"
   homepage "https://github.com/andpalmier/tfox"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,33 +13,23 @@ cask "tfox" do
 
   on_macos do
     on_intel do
-      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/andpalmier/tfox"
-      sha256 "ec4b7574ffc937e8a31c5f7104366dd6680731fef1c40e839b985cf7b13fdacd"
+      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_amd64.tar.gz"
+      sha256 "ea42c18e53a87821580363ae27d48d8b8923c9e2259c5641cd2cef084a7274e9"
     end
     on_arm do
-      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/andpalmier/tfox"
-      sha256 "7ec5e71223684179b03f9ce1a130044567836acc66940392eece8dcd3d0f9a9c"
+      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_arm64.tar.gz"
+      sha256 "13002f7fc185b89d1a5c1f93321f16951472f24a2fb5b0b71bbbf2fbdb4e154f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/andpalmier/tfox"
-      sha256 "ffe9ad7f6a14d8cb334521247c29e17c5e4996b6ba9c252da53cdf3e72211e66"
+      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_amd64.tar.gz"
+      sha256 "cb2c87ac3194cf6b832205a63c892dd2000176fe9ee7f6719ac65094096ce879"
     end
     on_arm do
-      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/andpalmier/tfox"
-      sha256 "de814ee24f07211e65c0ccbcc9017872f557436b752704cc01cda14e2ee84cb1"
-    end
-  end
-
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/tfox"]
+      url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_arm64.tar.gz"
+      sha256 "9f4818ed71d33c58cb73522f892d36a291251f039895806bef4627ad68168604"
     end
   end
 
