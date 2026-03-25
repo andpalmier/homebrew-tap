@@ -15,12 +15,12 @@ cask "mbzr" do
     on_intel do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "b6ca4f5a8af25025a832f9c95d342286ecbdac603fddb85a677ab0b1689eae3a"
+      sha256 "406cd68e61531675ef8898fcb5cba4762da9b89b4cd812d3129fa60484ab7b7c"
     end
     on_arm do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "cf44dc9c0c7c800d216e228cbaf27fcfbcdc0acf2445bf8df4acd52bb0a1c7d9"
+      sha256 "698da86bdd30f846f2b1a36425a5057e3e4dfd91a9a51c6768cf9c93cdf09bfc"
     end
   end
 
@@ -28,12 +28,12 @@ cask "mbzr" do
     on_intel do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "a9db9984bc34b7ec5ad3d3731d4f1ce5d6147c9541c87ef518fcbd6e592a40b4"
+      sha256 "0a3f2301b4fabbb8e2ead44c27c1c5058bc729e96d560fa53dad3afd53652871"
     end
     on_arm do
       url "https://github.com/andpalmier/mbzr/releases/download/v#{version}/mbzr_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/mbzr"
-      sha256 "989168846890e53239f81ee013a53ab02d44b71d9d6502748848f6b4b00694ea"
+      sha256 "78885ce50874dff3f1a54d2877a162bd0b783efc286eff4d78d4022f2a049b1d"
     end
   end
 
