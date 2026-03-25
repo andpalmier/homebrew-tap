@@ -15,12 +15,12 @@ cask "yrfy" do
     on_intel do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "3721d3e700abeac29c90596657af4c87644a1e753b8c024aa24d12cbd9c522f1"
+      sha256 "558761923038c127724b71a1ff734208ec49f5b49b86e817f1dc14920fa08f12"
     end
     on_arm do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "12974d091da5baedc60dfa4a41feadfe7d09f30b1f4ed025ba99e1c003e8bdef"
+      sha256 "cecfe433feacefdf51be371f42694c319f44ccea958888e33b6a86b284ccb202"
     end
   end
 
@@ -28,12 +28,12 @@ cask "yrfy" do
     on_intel do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "66d2a51f040c6286fa21464eddfb9d5a57d496b1548ad3489fb00b1f415d2ff0"
+      sha256 "c6ff28b71682ab4264ae422c21c918b0404ae891d37056f786bc1e9cb30cf589"
     end
     on_arm do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "c4c0f298f3558f5d4fbbc6ad25a25926b62d98677b5f7fc90a65bf8bb579b59c"
+      sha256 "aeba917c05f41c609f9431b0d71fc60f9b3d0d6359836d4001c81a0641650bbe"
     end
   end
 
