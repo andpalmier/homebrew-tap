@@ -3,7 +3,7 @@ cask "yrfy" do
   name "yrfy"
   desc "CLI tool to interact with YARAify API"
   homepage "https://github.com/andpalmier/yrfy"
-  version "0.0.4"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "yrfy" do
     on_intel do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "a594eadb71e6e2dcde2ae0daebb4de76646795700049b59f92351efc79e49b1e"
+      sha256 "3721d3e700abeac29c90596657af4c87644a1e753b8c024aa24d12cbd9c522f1"
     end
     on_arm do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "5367cfd9ff1aef4660c13d39e1b8205c1ffce2fbbb2d583b791d19dc016e1d2c"
+      sha256 "12974d091da5baedc60dfa4a41feadfe7d09f30b1f4ed025ba99e1c003e8bdef"
     end
   end
 
@@ -28,12 +28,12 @@ cask "yrfy" do
     on_intel do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_linux_amd64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "ec56762d4e3ac07c30ecfdd04511d6ac5a547a7b8cc3da1c107cc8aa45545acd"
+      sha256 "66d2a51f040c6286fa21464eddfb9d5a57d496b1548ad3489fb00b1f415d2ff0"
     end
     on_arm do
       url "https://github.com/andpalmier/yrfy/releases/download/v#{version}/yrfy_#{version}_linux_arm64.tar.gz",
         verified: "github.com/andpalmier/yrfy"
-      sha256 "31def04fadc8c841a464fe5deee7188ec7ad25bf9ae6399b7971a471faa421c9"
+      sha256 "c4c0f298f3558f5d4fbbc6ad25a25926b62d98677b5f7fc90a65bf8bb579b59c"
     end
   end
 
