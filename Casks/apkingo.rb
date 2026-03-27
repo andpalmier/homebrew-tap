@@ -3,7 +3,7 @@ cask "apkingo" do
   name "apkingo"
   desc "Tool to extract info from APK files"
   homepage "https://github.com/andpalmier/apkingo"
-  version "2.1.0"
+  version "2.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "apkingo" do
   on_macos do
     on_intel do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Darwin_x86_64.tar.gz"
-      sha256 "39aed4d5dd0bb384ea0096d43d7d67f0125a685d629910d7ec268c7cabd1422a"
+      sha256 "af831e04c9e58decfa3e6d59ecbde0217fb8d6d59d0f13a801113b467b798025"
     end
     on_arm do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Darwin_arm64.tar.gz"
-      sha256 "c650708ffa509684c735873b212262163bb06dc934555e318e5e9c26789f4cda"
+      sha256 "427851193c1da1a210e876063160972f805b0d5d2c5f6f38bbb64fe932329eb0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Linux_x86_64.tar.gz"
-      sha256 "56bbae6bd7adfdbd86d5bfc5069837ba4dd1d5e6cc510f4160719b217cfc4c29"
+      sha256 "eb1a04236de0dc00ba9467aa52c0ab26c88cfcc7fec852b5d47c0918995552d1"
     end
     on_arm do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Linux_arm64.tar.gz"
-      sha256 "deea0be53483ea79fdba87f58be43c6512975bd770e18dc7aed9d98e535f058c"
+      sha256 "466505ab8fcbeaee26bdc462d936504f45a7f31f39cf1445a44e6299fe652a9d"
     end
   end
 
