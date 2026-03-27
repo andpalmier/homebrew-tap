@@ -14,22 +14,22 @@ cask "apkingo" do
   on_macos do
     on_intel do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Darwin_x86_64.tar.gz"
-      sha256 "af831e04c9e58decfa3e6d59ecbde0217fb8d6d59d0f13a801113b467b798025"
+      sha256 "8fa36bbb223af702b03de9105ce564b495bf87d7ba567db592302c0b4a32d9c0"
     end
     on_arm do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Darwin_arm64.tar.gz"
-      sha256 "427851193c1da1a210e876063160972f805b0d5d2c5f6f38bbb64fe932329eb0"
+      sha256 "0d6a271e11ea6b9f21d90dfea248a5f96dbfa4cc6b37565e101b653cfc963180"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Linux_x86_64.tar.gz"
-      sha256 "eb1a04236de0dc00ba9467aa52c0ab26c88cfcc7fec852b5d47c0918995552d1"
+      sha256 "c0061fcfcc8051f8e42dd7813d6291280770dec001b7671ffba35efcc1ff4187"
     end
     on_arm do
       url "https://github.com/andpalmier/apkingo/releases/download/v#{version}/apkingo_Linux_arm64.tar.gz"
-      sha256 "466505ab8fcbeaee26bdc462d936504f45a7f31f39cf1445a44e6299fe652a9d"
+      sha256 "a4c46f1240e60fa21a5d122c39f4582b9f6b9f5e05896ff1d16a99d2c5848bd3"
     end
   end
 
