@@ -4,21 +4,21 @@ cask "tfox" do
 
   on_macos do
     on_arm do
-      sha256 "a297944026e545dee5064ea86ba001e3f465de8a1e801864f6d332e38a8a394f"
+      sha256 "4ea19dce628caebf9331761fdae659806ce4aa3db31197642d60ec56c928e99b"
       url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8b7c0070266081b7f8807a6dfd94cfe0c3b62dda66a72881d67ccfa02e29bfe6"
+      sha256 "78017f85ca18835d4bb7757ca9c3380ed10fa2d555ec043d3f10b0d720fe1ed1"
       url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ce34e44bd90c8c40ef82459a47c95c41587a37f4022bfc493648fcd48fc563ab"
+      sha256 "d1fad228d083b942eaf38709dd215b487d13428a3dc9104f1a515269463ff552"
       url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "69bd50b1c58b3f96d46ca1cfeed5ef1aa0514fd0d807174393ffbb2bb5d7f0ee"
+      sha256 "fa5a5cce02c926ed31fa52eed968e3bfb26c6309615b93a9cca4be5fed5ad966"
       url "https://github.com/andpalmier/tfox/releases/download/v#{version}/tfox_#{version}_linux_amd64.tar.gz"
     end
   end
