@@ -36,4 +36,5 @@ binaries and container images from each tool's releases page.
 
 GoReleaser rewrites every file under `Casks/` each time it publishes a release,
 so anything you change here disappears with the next one. Edit the
-`homebrew_casks` section in that tool's own `.goreleaser.yaml` instead.
+`homebrew_casks` section in that tool's own GoReleaser config instead
+(`.goreleaser.yml` or `.goreleaser.yaml`).
