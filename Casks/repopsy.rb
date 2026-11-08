@@ -6,25 +6,25 @@ cask "repopsy" do
     end
   end
 
-  version "2.1.0"
+  version "2.2.0"
 
   on_macos do
     on_arm do
-      sha256 "a4b5e81c36a490207ca811501eacbc09feff30651eeaaa65256326d4a2da34c0"
+      sha256 "6571273e307f852f8bceca1509de990fa560513b628a44421b497c4c6d78cf69"
       url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "09d69d90a2d238101cdb7cfbfb234bc409ef87adf7e07e038f46fbd4c6b4947a"
+      sha256 "b4b239391e1dd59555b04570801cf46168bad8339b8f110b9832cb54a0e29e5b"
       url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "64fd09bff6caac039d1da6a012c7db97ed42f1c85259da95d113cf9d53c057e7"
+      sha256 "1785af5c3ec491656cab470c502635e7cf849793be60fca3d31458073b92385c"
       url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0c733c019aefc5d779ecc1ad80653572b4444200883955763c0914b0585d8fb7"
+      sha256 "a7cb92436b150291aad21efd1923601b7d930141db1264e5bf94b23fe0e5c23e"
       url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "repopsy" do
 
   binary "repopsy"
 
-  # No zap stanza required
+  zap :not_required
 end
