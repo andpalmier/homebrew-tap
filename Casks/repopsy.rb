@@ -11,21 +11,25 @@ cask "repopsy" do
   on_macos do
     on_arm do
       sha256 "f99f230f85498a8ff673fd92d614e1f77cec4f088cdb9a1dc9aae9bbde2bbfa5"
-      url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_darwin_arm64.tar.gz"
+      url "https://api.github.com/repos/andpalmier/repopsy/releases/assets/723548296",
+          header: "Accept: application/octet-stream"
     end
     on_intel do
       sha256 "3da0c27294ed21dc14fdf5ba0c04010bf2daefa8f3def112142721a8cd5504e2"
-      url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_darwin_amd64.tar.gz"
+      url "https://api.github.com/repos/andpalmier/repopsy/releases/assets/723548294",
+          header: "Accept: application/octet-stream"
     end
   end
   on_linux do
     on_arm do
       sha256 "c59559d26cc8a1ff9af7a0bf4f3aefd7837d25e8af5385dcbf9b4fd74ad7d310"
-      url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_linux_arm64.tar.gz"
+      url "https://api.github.com/repos/andpalmier/repopsy/releases/assets/723548293",
+          header: "Accept: application/octet-stream"
     end
     on_intel do
       sha256 "735eb2d7cc7dc48b73423c7cdae8e35c5618e16883e3ab6d5bda457608026c65"
-      url "https://github.com/andpalmier/repopsy/releases/download/v#{version}/repopsy_#{version}_linux_amd64.tar.gz"
+      url "https://api.github.com/repos/andpalmier/repopsy/releases/assets/723548295",
+          header: "Accept: application/octet-stream"
     end
   end
 
