@@ -14,27 +14,18 @@ For example:
 brew install --cask andpalmier/tap/repopsy
 ```
 
-| Tool | Description |
-| --- | --- |
-| [apkingo](https://github.com/andpalmier/apkingo) | Extract information from APK files |
-| [mbzr](https://github.com/andpalmier/mbzr) | Search MalwareBazaar and submit samples |
-| [repopsy](https://github.com/andpalmier/repopsy) | Forensic analysis of git repository history |
-| [tfox](https://github.com/andpalmier/tfox) | Search the ThreatFox IOC database |
-| [urlhs](https://github.com/andpalmier/urlhs) | Search URLhaus and submit URLs |
-| [yrfy](https://github.com/andpalmier/yrfy) | Interact with the YARAify API |
+## Tools
 
-## Why these are casks
+- [apkingo](https://github.com/andpalmier/apkingo): extract information from APK files.
+- [mbzr](https://github.com/andpalmier/mbzr): search MalwareBazaar and submit samples.
+- [repopsy](https://github.com/andpalmier/repopsy): forensic analysis of git repository history.
+- [tfox](https://github.com/andpalmier/tfox): search the ThreatFox IOC database.
+- [urlhs](https://github.com/andpalmier/urlhs): search URLhaus and submit URLs.
+- [yrfy](https://github.com/andpalmier/yrfy): interact with the YARAify API.
 
-Homebrew expects a formula to build from source. These tools ship as
-pre-compiled binaries, which is what a cask is for, and GoReleaser has
-deprecated its own formula support for the same reason.
+## Notes
 
-Casks only work on macOS. On Linux, install with `go install`, or take the
-binaries and container images from each tool's releases page.
-
-## Editing a cask
-
-GoReleaser rewrites every file under `Casks/` each time it publishes a release,
-so anything you change here disappears with the next one. Edit the
-`homebrew_casks` section in that tool's own GoReleaser config instead
-(`.goreleaser.yml` or `.goreleaser.yaml`).
+- Casks are macOS only. On Linux, use `go install` or a release binary.
+- macOS binaries are unsigned and not notarized.
+- Casks do not remove the quarantine attribute. If macOS blocks a binary, build it with `go install` or wait for signed releases.
+- GoReleaser rewrites `Casks/` on every release. Edit `homebrew_casks` in each tool's GoReleaser config instead.

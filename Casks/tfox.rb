@@ -33,11 +33,5 @@ cask "tfox" do
 
   binary "tfox"
 
-  postflight_steps do
-    on_macos do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/tfox"]
-    end
-  end
-
-  # No zap stanza required
+  zap :not_required
 end
